@@ -8,7 +8,7 @@
 </script>
 
 <button
-  class={`bg-green white fw7 bn br-pill shadow-hover pa3 pointer ${className || ''}`}
+  class={`bg-green white fw7 bn br-pill shadow-hover pa3 ${className || ''}`}
   on:click={onClick}
 >
   <slot />

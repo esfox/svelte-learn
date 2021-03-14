@@ -11,6 +11,7 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.41.1
   sass: 1.32.8
   svelte: 3.35.0
+  svelte-navigator: 3.1.5_svelte@3.35.0
   svelte-preprocess: 4.6.9_sass@1.32.8+svelte@3.35.0
 lockfileVersion: 5.2
 packages:
@@ -228,6 +229,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-pMD+MVR538ipqkG5JXeOEbKWS5um1H4LUUccUQG68qpeqBYbzYy79Gh55jkd2TtPdRfUaLWdv6LPP//5Zt0aPQ==
+  /dedent-js/1.0.1:
+    dev: true
+    resolution:
+      integrity: sha1-vuX7fJ5yfYXf+iRZDRDsGrElUwU=
   /deepmerge/4.2.2:
     dev: true
     engines:
@@ -425,6 +430,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XfegD5pyTAfb+GY6chk283Ox5z8WexG56OvM06RWLpAc/UHozO8X6xAxEkIitZOtsSMM1Yr3DkHgW5W+onLhCw==
+  /lower-case/2.0.2:
+    dependencies:
+      tslib: 2.1.0
+    dev: true
+    resolution:
+      integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==
   /magic-string/0.25.7:
     dependencies:
       sourcemap-codec: 1.4.8
@@ -460,6 +471,13 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-oi1b3MfbyGa7FJMP9GmLTttni5JoICpYBRlq+x5V16fZbLsnL9N3wFqqIm/nIG43FjUFkFh9Epzp/kzUGUnJxQ==
+  /no-case/3.0.4:
+    dependencies:
+      lower-case: 2.0.2
+      tslib: 2.1.0
+    dev: true
+    resolution:
+      integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==
   /normalize-path/3.0.0:
     dev: true
     engines:
@@ -476,6 +494,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-k41FwbcLnlgnFh69f4qdUfvDQ+5vaSDnVPFI/y5XuhKRq97EnVVneO9F1ESVCdiVu4fCS2L8usX3mU331hB7pg==
+  /pascal-case/3.1.2:
+    dependencies:
+      no-case: 3.0.4
+      tslib: 2.1.0
+    dev: true
+    resolution:
+      integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==
   /path-is-absolute/1.0.1:
     dev: true
     engines:
@@ -683,6 +708,15 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
+  /svelte-navigator/3.1.5_svelte@3.35.0:
+    dependencies:
+      svelte: 3.35.0
+      svelte2tsx: 0.1.181_svelte@3.35.0
+    dev: true
+    peerDependencies:
+      svelte: 3.x
+    resolution:
+      integrity: sha512-CGTaexasSLpUaTSN2AlYqii0JeisIgg7uZbm8XCLKlpM9Qv3IltlJ7Nvh90Xw9ND97KqtGOjNJ3LNwMN1ABV0w==
   /svelte-preprocess/4.6.9_sass@1.32.8+svelte@3.35.0:
     dependencies:
       '@types/pug': 2.0.4
@@ -739,6 +773,17 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-gknlZkR2sXheu/X+B7dDImwANVvK1R0QGQLd8CNIfxxGPeXBmePnxfzb6fWwTQRsYQG7lYkZXvpXJvxvpsoB7g==
+  /svelte2tsx/0.1.181_svelte@3.35.0:
+    dependencies:
+      dedent-js: 1.0.1
+      pascal-case: 3.1.2
+      svelte: 3.35.0
+    dev: true
+    peerDependencies:
+      svelte: ^3.24
+      typescript: ^4.1.2
+    resolution:
+      integrity: sha512-S68R8GYxzdw9Eu19+WRrirClj7lq/nbzhu8tgRkqg8BVtI3zZF9PlLXtpXwnlcWK9UjDM5DPF2H/8kTnIZqJYg==
   /tachyons/4.12.0:
     dev: false
     resolution:
@@ -774,6 +819,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-gduQwd1rOdDMGxFG1gEvhV88Oirdo2p+KjoYFU7k2g+i7n6AFFbDQ5kMPUsW0pNbfQsB/cwXvT1i4Bue0s9g5g==
+  /tslib/2.1.0:
+    dev: true
+    resolution:
+      integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
   /wrappy/1.0.2:
     dev: true
     resolution:
@@ -803,5 +852,6 @@ specifiers:
   sass: ^1.32.8
   sirv-cli: ^1.0.0
   svelte: ^3.0.0
+  svelte-navigator: ^3.1.5
   svelte-preprocess: ^4.6.9
   tachyons: ^4.12.0
